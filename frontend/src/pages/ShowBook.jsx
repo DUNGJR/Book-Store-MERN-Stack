@@ -26,7 +26,7 @@ const ShowBook = () => {
   return (
     <div className='p-4'>
       <BackButton />
-      <h1 className='text-3xl my-4'>Show Book</h1>
+      <h1 className='text-3xl my-4'>Chi tiết công việc</h1>
       {loading ? (
         <Spinner />
       ) : (
@@ -40,12 +40,12 @@ const ShowBook = () => {
             <span>{book.title}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Author</span>
-            <span>{book.author}</span>
+            <span className='text-xl mr-4 text-gray-500'>Ngày bắt đầu</span>
+            <span>{book.createDay}</span>
           </div>
           <div className='my-4'>
-            <span className='text-xl mr-4 text-gray-500'>Publish Year</span>
-            <span>{book.publishYear}</span>
+            <span className='text-xl mr-4 text-gray-500'>Ngày kết thúc</span>
+            <span>{book.finishDay}</span>
           </div>
           <div className='my-4'>
             <span className='text-xl mr-4 text-gray-500'>Create Time</span>

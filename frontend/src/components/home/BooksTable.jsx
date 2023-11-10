@@ -8,15 +8,15 @@ const BooksTable = ({ books }) => {
     <table className='w-full border-separate border-spacing-2'>
       <thead>
         <tr>
-          <th className='border border-slate-600 rounded-md'>No</th>
-          <th className='border border-slate-600 rounded-md'>Title</th>
+          <th className='border border-slate-600 rounded-md'>STT</th>
+          <th className='border border-slate-600 rounded-md'>Tên</th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Author
+            Ngày bắt đầu
           </th>
           <th className='border border-slate-600 rounded-md max-md:hidden'>
-            Publish Year
+            Ngày hết hạn
           </th>
-          <th className='border border-slate-600 rounded-md'>Operations</th>
+          <th className='border border-slate-600 rounded-md'>Tùy chọn</th>
         </tr>
       </thead>
       <tbody>
@@ -29,10 +29,10 @@ const BooksTable = ({ books }) => {
               {book.title}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.author}
+              {book.createDay}
             </td>
             <td className='border border-slate-700 rounded-md text-center max-md:hidden'>
-              {book.publishYear}
+              {book.finishDay}
             </td>
             <td className='border border-slate-700 rounded-md text-center'>
               <div className='flex justify-center gap-x-4'>
